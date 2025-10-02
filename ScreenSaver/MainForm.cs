@@ -12,6 +12,9 @@ namespace ScreenSaver
         private readonly Image snowflakeImage = Properties.Resources.snow;
         private readonly System.Windows.Forms.Timer timer;
 
+        /// <summary>
+        /// Конструктор формы
+        /// </summary>
         public MainForm()
         {
             InitializeComponent();
@@ -21,6 +24,9 @@ namespace ScreenSaver
             timer.Interval = 100;
         }
 
+        /// <summary>
+        /// Создание снежинок
+        /// </summary>
         private void CreateSnowflakes(int count)
         {
             for (int i = 0; i < count; i++)
@@ -35,7 +41,9 @@ namespace ScreenSaver
             }
         }
 
-
+        /// <summary>
+        /// Перемещение снежинок
+        /// </summary>
         private void Timer_Tick(object sender, EventArgs e)
         {
             foreach (var snowflake in snowflakes)
@@ -66,7 +74,9 @@ namespace ScreenSaver
             timer.Start();
         }
 
-
+        /// <summary>
+        /// Отрисовка снежинок
+        /// </summary>
         private void Form1_Paint(object sender, PaintEventArgs e)
         {
 

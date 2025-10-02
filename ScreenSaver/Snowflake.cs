@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace ScreenSaver
 {
+    /// <summary>
+    /// Параметры снежинок
+    /// </summary>
     internal class Snowflake
     {
         public float X { get; set; }
