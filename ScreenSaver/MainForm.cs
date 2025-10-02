@@ -5,14 +5,14 @@ using System.Windows.Forms;
 
 namespace ScreenSaver
 {
-    public partial class Form1 : Form
+    public partial class MainForm : Form
     {
         private readonly List<Snowflake> snowflakes = new List<Snowflake>();
         private readonly Random random = new Random();
         private readonly Image snowflakeImage = Properties.Resources.snow;
         private readonly System.Windows.Forms.Timer timer;
 
-        public Form1()
+        public MainForm()
         {
             InitializeComponent();
 
